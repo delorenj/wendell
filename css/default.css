@@ -1,0 +1,68 @@
+/* 
+2c333d
+e1c799
+a39d8c
+8a5a3d
+5a2a20
+*/
+body {
+  background-color: #ffffff;
+  font-family: arial;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#banner {
+  background: url('../images/vs-mosaic.jpg') gray 0 repeat-x;
+  border-bottom: 3px solid #BBB;
+  height: 150px;
+  padding: 0 15px;
+}
+
+#banner span.title {
+  color: #333;
+  position: relative;
+  top:40px;
+  left: 100px;
+  font-family: 'Bangers', serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  text-shadow: 6px 6px 6px #888;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0.010em;
+  word-spacing: 0.101em;
+  line-height: 1.13;
+}
+
+#sub-banner {
+  background: url('../images/banner-border.png') white 0 repeat-x;
+  background-position: top;
+  height:40px;
+}
+
+#content {
+  min-height: 600px;
+}
+
+#footer {
+  background-color: #eaa799;
+  height: 40px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+ul li {
+  display:inline;
+  list-style: none;
+  margin: 0 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  color:black;
+}
