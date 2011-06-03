@@ -1,3 +1,8 @@
 jQuery(document).ready(function() {
-  gooeymenu.setup({id: 'banner-menu', selectitem: 1});
+  $("#banner-menu li").bind("click", function() {
+    $(this).parent().find(".active").removeClass("active");
+    $(this).addClass("active", 1500);
+  });
+  
+  
 });

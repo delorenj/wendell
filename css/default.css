@@ -17,7 +17,7 @@ body {
 
 #banner {
   background: url('../images/vs-mosaic.jpg') gray 0 repeat-x;
-  border-bottom: 3px solid #BBB;
+  border-bottom: 4px solid #254176;
   height: 150px;
   padding: 0 15px;
 }
@@ -39,10 +39,10 @@ body {
   line-height: 1.13;
 }
 
-#sub-banner {
+#border {
   background: url('../images/banner-border.png') white 0 repeat-x;
   background-position: top;
-  height:40px;
+  height:15px;
 }
 
 #content {
@@ -50,10 +50,55 @@ body {
 }
 
 #footer {
-  background-color: #eaa799;
-  height: 40px;
+  background-color: #484848;
+/*  border-top: 4px solid #CCCCCC;*/
+  padding: 15px;
+  height: 70px;
   text-align: center;
   font-size: 0.8em;
+}
+
+#footer li a {
+  color: #F5F5F5;
+  font-family: arial;
+  font-size: 1.1em;  
+}
+
+#footer li a:hover {
+  text-decoration: underline;
+}
+
+#description {
+  float: left;
+  width: 25%;
+  font-family: "Yanone Kaffeesatz", "Bevan";
+  font-size: 1.4em;
+}
+
+#banner-menu {
+  padding: 10px 0;
+  height: 40px;
+  background-color:#012052;
+  text-align: center;
+}
+
+#banner-menu li a {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+#banner-menu li {
+  padding: 10px 40px;
+}
+
+#banner-menu ul li.active {
+  background-color: #153166;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+/*  border-bottom: 4px solid #AAA;*/
 }
 
 ul li {
