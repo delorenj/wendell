@@ -15,6 +15,7 @@ $gen = new LoremIpsumGenerator;
     <link href="css/default.css" type="text/css" rel="stylesheet"></link>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-BubbleEngine.js"></script>
     <script type="text/javascript" src="js/epc.js"></script>   
     <title>Wendell's Pool Services</title>
   </head>
@@ -39,6 +40,7 @@ $gen = new LoremIpsumGenerator;
         <img src="images/is-poolguy.jpg" />
         <img src="images/is-pool-vacum2.jpg" />
       </div>      
+      <div class="push"></div>
     </div>
     <div id="footer">
       <ul>
