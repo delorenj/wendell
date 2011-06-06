@@ -16,7 +16,7 @@ body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+	margin: 0 auto -102px; /* the bottom margin is the negative value of the footer's height */
 }
 
 #banner {
@@ -43,23 +43,123 @@ body {
   line-height: 1.13;
 }
 
-#border {
+.border {
   background: url('../images/banner-border.png') white 0 repeat-x;
   background-position: top;
   height:15px;
 }
 
 #content {
-  min-height: 600px;
+  position: relative;
+  padding: 20px;
 }
 
-.push { height: 142px;}
+#gallery, div.orbit-wrapper {
+  width: 650px !important;
+  height: 400px !important;
+  margin: 0 auto;
+}
+
+#left {
+  position: absolute;
+  width: 350px;
+  z-index: 1000;
+  margin-left: -370px;
+  font-family: "Arial";
+}
+
+.field {
+  margin: 20px 5px;
+}
+
+input {
+  height: 30px;
+  width: 250px;
+  font-family: "bangers";
+  font-size: 1.2em;
+}
+
+#right {
+  width: 300px;
+}
+
+#right p {
+  font-family: "Bangers";
+  margin-bottom: 10px;
+}
+
+#right label {
+  font-family: "bangers";
+  letter-spacing: 0.10em;
+  word-spacing: 0.101em;
+  line-height: 1.13;  
+}
+
+button {
+  margin-left: 5px;
+  width: 250px;
+  height: 35px;
+}
+
+select {
+  width: 250px;
+  min-width: 250px;
+  z-index: 100;
+}
+
+blockquote p {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+blockquote {
+display: block;
+width: 250px;
+padding: 0 70px;
+}
+
+blockquote:before, blockquote:after {
+  color: #383838;
+  display: block;
+  font-size: 700%;
+  width: 80px;
+}
+
+blockquote:before {
+  content: '\201C';
+  height: 15px;
+  margin-left: -0.5em;
+}
+blockquote:after {
+  content: '\201D';
+  height: 75px;
+  margin-top: -50px;
+  margin-left: 220px;
+}
+
+#right {
+  position: absolute;
+  width: 300px;
+  margin-left: 670px;
+  z-index: 1000;
+}
+
+.container {
+  width: 650px;
+  margin: 0 auto;
+}
+
+.push { height: 102px;}
 
 #footer {
   background-color: #383838;
 /*  border-top: 4px solid #CCCCCC;*/
   padding: 15px;
-  height: 142px;
+  height: 102px;
   text-align: center;
   font-size: 0.8em;
 }
@@ -85,10 +185,7 @@ body {
 }
 
 #description {
-  float: left;
-  width: 25%;
-  font-family: "Yanone Kaffeesatz", "Bevan";
-  font-size: 1.4em;
+
 }
 
 #banner-menu {

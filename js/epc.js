@@ -13,10 +13,7 @@ EPC = function() {
  
   return {
     init : function() {
-      $("#banner-menu li a").hover(function(e){
-//        $(this).parent().animate({
-//          color: "red"
-//        }, 1000);
+      $("#banner-menu li[class!='active'] a").hover(function(e){
         $(this).mousemove(function(j) {
           bm.settings(null, null, j.pageX, j.pageY-50);
           bm.addBubbles(3);          
@@ -26,6 +23,28 @@ EPC = function() {
       }, function(){                
         bm.removeBubbles();        
       });     
+
+      $('#gallery').orbit({
+       animation: 'fade',
+       animationSpeed: 800,
+       timer: true,
+       advanceSpeed: 4000,
+       pauseOnHover: false,
+       startClockOnMouseOut: true,
+       startClockOnMouseOutAfter: 1000,
+       directionalNav: false,
+       captions: false,
+       captionAnimation: 'slideOpen',
+       captionAnimationSpeed: 800,
+       bullets: false,
+       bulletThumbs: false,
+       bulletThumbLocation: 'images/thumbs/'
+      });      
+      
+      $(".timer").hide();
+      $("select").selectmenu();
+      $("input[name='date']").datepicker();
+      $("button").button();
     }
   }
 
