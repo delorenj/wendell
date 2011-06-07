@@ -45,6 +45,26 @@ EPC = function() {
       $("select").selectmenu();
       $("input[name='date']").datepicker();
       $("button").button();
+      
+      $("select[name='contact']").bind("change", function() {
+        switch($(this).val()) {
+          case "Phone" :
+            $("#email").slideUp("slow", function() {
+              $("#phone").slideDown("slow");
+            });
+            break;
+            
+          case "Email" :
+            $("#phone").slideUp("slow", function() {
+              $("#email").slideDown("slow");
+            });
+            break;     
+          
+          default :
+            $("#phone, #email").slideUp("slow");
+        }
+      });
+      
     }
   }
 

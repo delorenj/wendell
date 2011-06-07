@@ -34,6 +34,9 @@ $gen = new LoremIpsumGenerator;
           <li class="active"><a href="about.php">About</a></li>
           <li><a href="contact.php">Contact</a></li>
         </ul>
+        <span style="float: right; color: #A5A5A5; position:relative; top:-30px;">
+          <iframe src="http://www.facebook.com/plugins/like.php?app_id=171249642935162&amp;href=htttp%3A%2F%2Fwendell.jaradd.com&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=dark&amp;font=arial&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:40px;" allowTransparency="true"></iframe>
+        </span>                  
       </div>
       <div id="border"></div>      
       <div id="content">
