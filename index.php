@@ -92,6 +92,7 @@ $gen = new LoremIpsumGenerator;
       <div class="push"></div>           
     </div>    
     <div id="page-bottom"></div>
+    <div id="page-floor"></div>
     <div id="footer">
       <?php echo getFooter(); ?>
     </div>
