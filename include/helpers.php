@@ -11,4 +11,26 @@ function getFooter() {
     <p>Copyright &copy; 2011 Wendell's Pool Service, LLC</p>";
   return $html;
 }
+
+function getHead() {
+  $html =
+  ' <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/reset.css" type="text/css" rel="stylesheet"></link>
+    <link href="css/dot-luv/jquery.ui.css" type="text/css" rel="stylesheet"></link>    
+    <link  href="http://fonts.googleapis.com/css?family=Bangers:regular" rel="stylesheet" type="text/css" ></link>
+    <link  href="http://fonts.googleapis.com/css?family=Bevan:regular" rel="stylesheet" type="text/css" ></link>
+    <link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold" rel="stylesheet" type="text/css"></link>
+    <link type="text/css" rel="stylesheet" href="css/orbit/orbit-1.2.3.css" />            
+    <link rel="Stylesheet" href="css/ui-selectmenu.css" type="text/css"></link>
+    <link rel="Stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-darkness/jquery-ui.css" type="text/css"></link>
+    <link href="css/default.css" type="text/css" rel="stylesheet"></link>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-select.js"></script>    
+    <script type="text/javascript" src="js/jquery-BubbleEngine.js"></script>
+    <script type="text/javascript" src="js/jquery.orbit-1.2.3.js"></script>
+    <script type="text/javascript" src="js/epc.js"></script>';
+  
+  return $html;
+}
 ?>
