@@ -16,7 +16,7 @@ $gen = new LoremIpsumGenerator;
         <span class="title">Wendell's Pool Service</span>
       </div>
       <div id="banner-menu">
-        <ul>
+        <ul class="menu">
           <li><a href="index.php">Home</a></li>
           <li><a href="services.php">Services</a></li>
           <li class="active"><a href="about.php">About</a></li>
@@ -33,6 +33,7 @@ $gen = new LoremIpsumGenerator;
       <div class="push"></div>           
     </div>    
     <div id="page-bottom"></div>
+    <div id="page-floor"></div>
     <div id="footer">
       <?php echo getFooter(); ?>
     </div>

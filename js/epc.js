@@ -64,7 +64,14 @@ EPC = function() {
             $("#phone, #email").slideUp("slow");
         }
       });
-      
+      var start = $("ul.service-list li:first-child").position();
+      $("ul.service-list li.active").css("top", start.top).css("height", $("ul.service-list li:first-child").css("height"));
+      $("ul.service-list li").hover(function() {        
+        $("ul.service-list li.active").animate({
+          "top": "+=" + $(this).css("top") + "px"
+        }, "slow");
+      }, function(){
+      })
     }
   }
 

@@ -151,10 +151,38 @@ blockquote:after {
   margin: 0 auto;
 }
 
+ul.service-list {
+  cursor: pointer;
+  width: 50%;
+}
+
+ul.service-list li {
+  padding:12px;
+}
+
+ul.service-list li.active {
+  border-left: 6px solid #012052;
+  position: absolute;
+  z-index: -1;
+}
+
+ul.service-list h3 {
+  font-family: "Yanone Kaffeesatz";
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #012052;
+}
+
+ul.service-list p {
+  margin-top: 10px;
+/*  font-family: "arial";*/
+  font-size: 1.4em;
+  color: #050505;
+}
 #page-bottom {
   background: url('../images/is-water.jpg') white repeat-x;
   width: 100%;  
-  height: 102px;
+  height: 100px;
 }
 
 #page-floor {
@@ -246,13 +274,13 @@ blockquote:after {
 /*  border-bottom: 4px solid #AAA;*/
 }
 
-ul li {
+ul.menu li {
   display:inline;
   list-style: none;
   margin: 0 30px;
 }
 
-ul li a {
+ul.menu li a {
   text-decoration: none;
   color:black;
 }

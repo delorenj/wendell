@@ -16,7 +16,7 @@ $gen = new LoremIpsumGenerator;
         <span class="title">Wendell's Pool Service</span>
       </div>
       <div id="banner-menu">
-        <ul>
+        <ul class="menu">
           <li><a href="index.php">Home</a></li>
           <li class="active"><a href="services.php">Services</a></li>
           <li><a href="about.php">About</a></li>
@@ -28,7 +28,7 @@ $gen = new LoremIpsumGenerator;
       </div>
       <div id="border"></div>      
       <div id="content">
-        <ul>
+        <ul class="service-list">
           <li>
             <h3>Opening/Summerizing</h3>
             <p>Removal of winter cover, re-installation of filtration system & equipment, cleaning and test-firing of heater, brushing pool walls, addition of opening chemicals.</p>
@@ -56,12 +56,14 @@ $gen = new LoremIpsumGenerator;
           <li>
             <h3>Winter Maintenance</h3>
             <p>Testing, partially-balancing and chlorination of pool water, securing and adjusting the winter cover (and removal of branches and leaves from cover) & monitoring water level of pool, which includes lowering as needed.  </p>
-          </li>            
+          </li>
+          <li class="active"></li>
         </ul>
       </div>      
       <div class="push"></div>           
     </div>    
     <div id="page-bottom"></div>
+    <div id="page-floor"></div>
     <div id="footer">
       <?php echo getFooter(); ?>
     </div>
