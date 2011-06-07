@@ -40,7 +40,36 @@ $gen = new LoremIpsumGenerator;
       </div>
       <div id="border"></div>      
       <div id="content">
-        <p>Services</p>
+        <ul>
+          <li>
+            <h3>Opening/Summerizing</h3>
+            <p>Removal of winter cover, re-installation of filtration system & equipment, cleaning and test-firing of heater, brushing pool walls, addition of opening chemicals.</p>
+          </li>
+          <li>
+            <h3>Swimming Pool Cover Repair</h3>
+            <p>We will deliver safety covers to Meyco, have them repaired and evaluated if necessary.</p>
+          </li>
+          <li>
+            <h3>Initial Vacuum</h3>
+            <p>First cleaning of the year, similar to a basic vacuum service, but requires the removal of heavy debris from the pool floor.</p>
+          </li>
+          <li>
+            <h3>Basic Vacuum Service</h3>
+            <p>Includes vacuuming the pool, cleaning skimmer baskets, cleaning debris bag in automatic cleaners, testing of chemicals, basic cleaning of tiles, backwashing filter, test-firing heater, and cleaning of pump baskets.</p>
+          </li>
+          <li>
+            <h3>Leak Detection and Repair</h3>            
+            <p>Pressure testing of lines and dye testing.</p>
+          </li>
+          <li>
+            <h3>Closing/Winterizing</h3>
+            <p>Draining pool's filtration system and removal of water with high-powered air blower from pool's circulation system, capping of pool lines, addition of winter chemical kit (included in the price of Winterizing) to help keep water clear over winter period & installation of winter cover which decreases collection of debris and provides safety over the winter.</p>
+          </li>
+          <li>
+            <h3>Winter Maintenance</h3>
+            <p>Testing, partially-balancing and chlorination of pool water, securing and adjusting the winter cover (and removal of branches and leaves from cover) & monitoring water level of pool, which includes lowering as needed.  </p>
+          </li>            
+        </ul>
       </div>      
       <div class="push"></div>
     </div>
