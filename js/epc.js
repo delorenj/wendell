@@ -69,16 +69,14 @@ EPC = function() {
       $("ul.service-list li.active").css("top", start.top).css("height", $("ul.service-list li:first-child").css("height"));
       $("ul.service-list li").hover(function() {
         var sel = $(this);
+        if(sel.position().top == $("ul.service-list li.active").position().top) return;
         $("ul.service-list li.active").animate({
           top: $(this).position().top,
           height: $(this).height()
         }, {
           duration: 350,
           easing: "easeOutBack",
-          queue: false,
-          complete: function() {
-
-          }
+          queue: false
         });
 
         $("#service-image").animate({
