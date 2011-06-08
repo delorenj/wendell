@@ -65,8 +65,10 @@ EPC = function() {
         }
       });
       var start = $("ul.service-list li:first-child").position();
+      var orig = $("#service-image").position();
       $("ul.service-list li.active").css("top", start.top).css("height", $("ul.service-list li:first-child").css("height"));
       $("ul.service-list li").hover(function() {
+        var sel = $(this);
         $("ul.service-list li.active").animate({
           top: $(this).position().top,
           height: $(this).height()
@@ -75,15 +77,24 @@ EPC = function() {
           easing: "easeOutBack",
           queue: false,
           complete: function() {
-            
+
           }
+        });
+
+        $("#service-image").animate({
+          left: "+=700"
+        },{
+          duration: 200, 
+          complete: function() {
+            $(this).html("<img src='images/is-service-" + sel.index() + ".jpg' alt='' />").hide().css("left", orig.left).fadeIn({duration: 500});
+          },
+          queue: false              
         });
       }, function(){
       });
      $("#service-image").stickyfloat({
-       duration: 1000,
-       startOffset: 400,
-       offsetY: 1200
+       duration: 500,       
+       lockBottom: true
      });
     }
   }
@@ -96,9 +107,9 @@ jQuery(document).ready(function() {
       var $obj 				= this;
       var parentPaddingTop 	= parseInt($obj.parent().css('padding-top'));
       var startOffset 		= $obj.parent().offset().top;
-      var opts 				= $.extend({ startOffset: startOffset, offsetY: parentPaddingTop, duration: 200, lockBottom:true }, options);
+      var opts 				= $.extend({startOffset: startOffset, offsetY: parentPaddingTop, duration: 200, lockBottom:true}, options);
 
-      $obj.css({ position: 'absolute' });
+      $obj.css({position: 'absolute'});
 
       if(opts.lockBottom){
         var bottomPos = $obj.parent().height() - $obj.height() + parentPaddingTop; //get the maximum scrollTop value
@@ -122,7 +133,7 @@ jQuery(document).ready(function() {
           if ( $(document).scrollTop() < opts.startOffset ) // if window scrolled < starting offset, then reset Obj position (opts.offsetY);
             newpos = parentPaddingTop;
 
-          $obj.animate({ top: newpos }, opts.duration );
+          $obj.animate({top: newpos}, opts.duration );
         }
       });
     };  

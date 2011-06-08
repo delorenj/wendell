@@ -153,12 +153,11 @@ blockquote:after {
 
 #service-image {
   position: absolute;
-  top: 50%;
-  right: 0;
-  border: 1px solid black;
-  width: 50%;
-  height: 400px;
-  margin-top: -400px;
+  right: 10px;
+  top: 1%;
+  width: 45%;
+  padding: 15px;
+  height: 450px;
 }
 
 ul.service-list {

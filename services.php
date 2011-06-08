@@ -59,9 +59,11 @@ $gen = new LoremIpsumGenerator;
           </li>
           <li class="active"></li>
         </ul>
-        <div id="service-image"></div>
+        <div id="service-image">
+          <img src="images/is-service-1.jpg" alt="" />
+        </div>
       </div>      
-      <div class="push"></div>           
+      <div class="push"></div>
     </div>    
     <div id="page-bottom"></div>
     <div id="page-floor"></div>
